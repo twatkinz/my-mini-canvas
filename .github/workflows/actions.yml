@@ -1,10 +1,8 @@
 name: testing mini canvas
-run-name: "trying to test mini canvas"
 on:
   push:
     branches:
         -'main'
-        -'twatkinz/actions'
 jobs:
   build:
     runs-on: ubuntu-latest
