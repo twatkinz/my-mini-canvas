@@ -1,4 +1,5 @@
 name: testing mini canvas
+run-name: "trying to test mini canvas"
 on:
   push:
     branches:
