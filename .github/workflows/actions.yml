@@ -1,0 +1,21 @@
+name: testing mini canvas
+run-name: ${{ github.actor}} tries to run the project
+on:
+  push:
+    branches:
+        -'main'
+        -'twatkinz/actions'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - uses: actions/setup-python@v5
+        - run: |
+            pip install -r requirements.txt
+            pip install pytest pytest-cov 
+        - run: |
+            pytest --cov=
+
+
+
