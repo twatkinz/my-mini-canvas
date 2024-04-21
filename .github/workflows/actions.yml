@@ -12,10 +12,12 @@ jobs:
         - name: python set up
           uses: actions/setup-python@v5
         - name: install dependencies
+          working-directory: myminicanvas/
           run: |
             pip install -r requirements.txt
             pip install pytest pytest-cov 
         - name: run the tests
+          working-directory: myminicanvas/
           run: |
             pytest --cov
 
